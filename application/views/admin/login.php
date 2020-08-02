@@ -26,7 +26,13 @@
         <!-- /.login-logo -->
         <div class="login-box-body">
             <p class="login-box-msg">Introduzca sus datos de ingreso</p>
-
+			<?php if($this->session->flashdata("error")):?>
+            <div class="alert alert-danger">
+                <p>
+					<?php echo $this->session->flashdata("error")?>
+				</p>
+        	</div>
+            <?php endif; ?>
             <form action="<?php echo base_url();?>auth/login" method="post">
                 <div class="form-group has-feedback">
                     <input type="text" class="form-control" placeholder="Usuario" name="username" required>
