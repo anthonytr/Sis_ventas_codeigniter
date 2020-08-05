@@ -21,6 +21,71 @@
 									</a>
 								</div>
 							</div>
+							<hr>
+							<div class="row">
+								<div class="col-md-12">
+									<table class="table table-bordered btn-hover">
+										<thead>
+											<tr>
+												<th>#</th>
+												<th>Nombre</th>
+												<th>Descripción</th>
+												<th>Opciones</th>
+											</tr>
+										</thead>
+										<tbody>
+											<tr>
+												<td>1</td>
+												<td>Categoría 01</td>
+												<td>Descripción categoría 01</td>
+												<td>
+													<div class="btn-group">
+														<a href="#" class="btn btn-info"><span class="fa fa-eye"></span></a>
+														<a href="#" class="btn btn-warning"><span class="fa fa-pencil"></span></a>
+														<a href="#" class="btn btn-danger"><span class="fa fa-remove"></span></a>
+													</div>
+												</td>
+											</tr>
+											<tr>
+												<td>1</td>
+												<td>Categoría 01</td>
+												<td>Descripción categoría 01</td>
+												<td>
+													<div class="btn-group">
+														<a href="#" class="btn btn-info"><span class="fa fa-eye"></span></a>
+														<a href="#" class="btn btn-warning"><span class="fa fa-pencil"></span></a>
+														<a href="#" class="btn btn-danger"><span class="fa fa-remove"></span></a>
+													</div>
+												</td>
+											</tr>
+											<tr>
+												<td>1</td>
+												<td>Categoría 01</td>
+												<td>Descripción categoría 01</td>
+												<td>
+													<div class="btn-group">
+														<a href="#" class="btn btn-info"><span class="fa fa-eye"></span></a>
+														<a href="#" class="btn btn-warning"><span class="fa fa-pencil"></span></a>
+														<a href="#" class="btn btn-danger"><span class="fa fa-remove"></span></a>
+													</div>
+												</td>
+											</tr>
+											<tr>
+												<td>1</td>
+												<td>Categoría 01</td>
+												<td>Descripción categoría 01</td>
+												<td>
+													<div class="btn-group">
+														<a href="#" class="btn btn-info"><span class="fa fa-eye"></span></a>
+														<a href="#" class="btn btn-warning"><span class="fa fa-pencil"></span></a>
+														<a href="#" class="btn btn-danger"><span class="fa fa-remove"></span></a>
+													</div>
+												</td>
+											</tr>
+										</tbody>
+									</table>
+								</div>
+							</div>
 						</div>
 						<!-- /.box-body -->
 				</div>
