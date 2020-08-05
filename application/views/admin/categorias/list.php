@@ -24,7 +24,7 @@
 							<hr>
 							<div class="row">
 								<div class="col-md-12">
-									<table class="table table-bordered btn-hover">
+									<table id="example1" class="table table-bordered btn-hover">
 										<thead>
 											<tr>
 												<th>#</th>
@@ -34,54 +34,22 @@
 											</tr>
 										</thead>
 										<tbody>
-											<tr>
-												<td>1</td>
-												<td>Categoría 01</td>
-												<td>Descripción categoría 01</td>
-												<td>
-													<div class="btn-group">
-														<a href="#" class="btn btn-info"><span class="fa fa-eye"></span></a>
-														<a href="#" class="btn btn-warning"><span class="fa fa-pencil"></span></a>
-														<a href="#" class="btn btn-danger"><span class="fa fa-remove"></span></a>
-													</div>
-												</td>
-											</tr>
-											<tr>
-												<td>1</td>
-												<td>Categoría 01</td>
-												<td>Descripción categoría 01</td>
-												<td>
-													<div class="btn-group">
-														<a href="#" class="btn btn-info"><span class="fa fa-eye"></span></a>
-														<a href="#" class="btn btn-warning"><span class="fa fa-pencil"></span></a>
-														<a href="#" class="btn btn-danger"><span class="fa fa-remove"></span></a>
-													</div>
-												</td>
-											</tr>
-											<tr>
-												<td>1</td>
-												<td>Categoría 01</td>
-												<td>Descripción categoría 01</td>
-												<td>
-													<div class="btn-group">
-														<a href="#" class="btn btn-info"><span class="fa fa-eye"></span></a>
-														<a href="#" class="btn btn-warning"><span class="fa fa-pencil"></span></a>
-														<a href="#" class="btn btn-danger"><span class="fa fa-remove"></span></a>
-													</div>
-												</td>
-											</tr>
-											<tr>
-												<td>1</td>
-												<td>Categoría 01</td>
-												<td>Descripción categoría 01</td>
-												<td>
-													<div class="btn-group">
-														<a href="#" class="btn btn-info"><span class="fa fa-eye"></span></a>
-														<a href="#" class="btn btn-warning"><span class="fa fa-pencil"></span></a>
-														<a href="#" class="btn btn-danger"><span class="fa fa-remove"></span></a>
-													</div>
-												</td>
-											</tr>
+											<?php if(!empty($categorias)):?>
+												<?php foreach($categorias as $categoria):?>
+													<tr>
+														<td><?php echo $categoria->id;?></td>
+														<td><?php echo $categoria->nombre;?></td>
+														<td><?php echo $categoria->descripcion;?></td>
+														<td>
+															<div class="btn-group">
+																<a href="#" class="btn btn-info"><span class="fa fa-eye"></span></a>
+																<a href="#" class="btn btn-warning"><span class="fa fa-pencil"></span></a>
+																<a href="#" class="btn btn-danger"><span class="fa fa-remove"></span></a>
+															</div>
+														</td>
+													</tr>
+												<?php endforeach;?>
+											<?php endif;?>
 										</tbody>
 									</table>
 								</div>
